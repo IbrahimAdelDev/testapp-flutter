@@ -42,7 +42,7 @@ class HiveData {
       final minute = dt.minute.toString().padLeft(2, '0');
       final period = dt.hour >= 12 ? 'مساءً' : 'صباحًا';
 
-      final weekday = weekdays[dt.weekday % 7];
+      final weekday = weekdays[(dt.weekday % 7)-1];
 
       return '$weekday - $hour:$minute $period';
     } catch (e) {

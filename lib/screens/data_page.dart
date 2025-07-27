@@ -269,7 +269,7 @@ class _DataPageState extends State<DataPage> {
                                 ],
                               ),
                             ),
-                            Text('أخر تحديث اليوم${data.formattedDate}', style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255),)),
+                            Text(' أخر تحديث يوم ${data.formattedDate}', style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255),)),
                             const SizedBox(height: 10),
                             Padding(
                               padding: const EdgeInsets.only(bottom: 16.0),

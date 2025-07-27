@@ -7,6 +7,8 @@ class ReportService {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
+      // ignore: avoid_print
+      // print('تم تحميل التقرير بنجاح: $data');
       return data;
     } else {
       throw Exception('فشل تحميل التقرير');
